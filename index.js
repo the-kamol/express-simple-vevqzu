@@ -10,12 +10,8 @@ app.get('/', (req, res) => {
   res.sendFile(path.resolve('pages/index.html'));
 });
 
-// app.get('/api', async (req, res) => {
-//   request(req.query.image).pipe(res);
-// });
-
 app.get('/api', async (req, res) => {
-  res.sendFile(path.resolve('static/assets/image.svg'));
+  request(req.query.image).pipe(res);
 });
 
 app.get('/myImg.jpg', async (req, res) => {
