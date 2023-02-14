@@ -18,8 +18,8 @@ app.get('/api', async (req, res) => {
   res.sendFile(path.resolve('static/assets/image.svg'));
 });
 
-app.get('/myImg.svg.png', async (req, res) => {
-  res.sendFile(path.resolve('static/assets/image.svg'));
+app.get('/myImg.jpg', async (req, res) => {
+  res.sendFile(path.resolve('static/assets/myImg.jpg'));
 });
 
 app.listen(port, () => {
